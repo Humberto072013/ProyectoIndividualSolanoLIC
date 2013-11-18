@@ -1,0 +1,334 @@
+@charset "utf-8";
+/* CSS Document */
+p{
+	font:"Century Gothic";
+	color:#FFF}
+header{
+	border-top: 1 px;
+	}
+	.texto{ font-size:24px;
+	color:#6F0;}
+
+body{
+	background:url(../Fotos/homepage-bg.jpg) 0 0 repeat;
+	}
+	
+img {
+	width:100%;
+	max-width:100000px;
+}
+#main {
+	height: 1020px;
+	padding-top: 20px;
+	background: #7d7e7d; /* old browsers */
+	background: -moz-linear-gradient(top, #444444 0%, #000000 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#333)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* ie */
+}
+
+
+#men{	width: 600px;
+	
+	}
+	
+	#menu{
+width: 100%;
+margin: 0;
+padding: 10px 0 0 0;
+list-style: none;
+background: #111;
+background: -moz-linear-gradient(#444, #111);
+background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+background: -webkit-linear-gradient(#444, #111);
+background: -o-linear-gradient(#444, #111);
+background: -ms-linear-gradient(#444, #111);
+background: linear-gradient(#444, #111);
+-moz-border-radius: 50px;
+border-radius: 50px;
+-moz-box-shadow: 0 2px 1px #9c9c9c;
+-webkit-box-shadow: 0 2px 1px #9c9c9c;
+box-shadow: 0 2px 1px #9c9c9c;
+}
+
+#menu li{
+float: left;
+padding: 0 0 10px 0;
+position: relative;
+}
+
+#menu a{
+float: left;
+height: 25px;
+padding: 0 25px;
+color: #999;
+text-transform: uppercase;
+font: bold 12px/25px Arial, Helvetica;
+text-decoration: none;
+text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+color: #fafafa;
+}
+
+#menu li:hover > ul{
+display: block;
+}
+
+/* Sub-menu */
+
+#menu ul{
+list-style: none;
+margin: 0;
+padding: 0;
+display: none;
+position: absolute;
+top: 35px;
+left: 0;
+z-index: 99999;
+background: #444;
+background: -moz-linear-gradient(#444, #111);
+background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+background: -webkit-linear-gradient(#444, #111);
+background: -o-linear-gradient(#444, #111);
+background: -ms-linear-gradient(#444, #111);
+background: linear-gradient(#444, #111);
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+#menu ul li{
+float: none;
+margin: 0;
+padding: 0;
+display: block;
+-moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+-webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+#menu ul a{
+padding: 10px;
+height: auto;
+line-height: 1;
+display: block;
+white-space: nowrap;
+float: none;
+text-transform: none;
+}
+
+*html #menu ul a{ /* IE6 */
+height: 10px;
+width: 150px;
+}
+
+*:first-child+html #menu ul a{ /* IE7 */
+height: 10px;
+width: 150px;
+}
+
+#menu ul a:hover{
+background: #0186ba;
+background: -moz-linear-gradient(#04acec, #0186ba);
+background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+background: -webkit-linear-gradient(#04acec, #0186ba);
+background: -o-linear-gradient(#04acec, #0186ba);
+background: -ms-linear-gradient(#04acec, #0186ba);
+background: linear-gradient(#04acec, #0186ba);
+}
+
+#menu ul li:first-child a{
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after{
+content: '';
+position: absolute;
+left: 30px;
+top: -8px;
+width: 0;
+height: 0;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+border-bottom-color: #04acec;
+}
+
+#menu ul li:last-child a{
+-moz-border-radius: 0 0 5px 5px;
+-webkit-border-radius: 0 0 5px 5px;
+border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#menu:after{
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+
+ li.atlanta a { background:url(../Fotos/teams/atlanta.png) no-repeat top left; }
+ li.boston a { background: url(../Fotos/teams/boston.png) no-repeat left; }
+ li.chicago a { background:url(../Fotos/teams/bulls.png) no-repeat left; }
+ li.brooklin a { background:url(../Fotos/teams/nets.png) no-repeat left; }
+ li.charlote a { background: url(../Fotos/teams/bobcats.png) no-repeat left; }
+ li.cleveland a { background:url(../Fotos/teams/cavs.png) no-repeat left; }
+ li.mavs a { background:url(../Fotos/teams/mavs.png) no-repeat left; }
+ li.Spurs a { background:url(../Fotos/teams/spurs.png) no-repeat left; }
+ li.knicks a { background:url(../Fotos/teams/knicks.png) no-repeat left; }
+ li.heat a { background:url(../Fotos/teams/miami.png) no-repeat left; }
+ li.lakers a { background:url(../Fotos/teams/lakers.png) no-repeat left; }
+ li.clippers a { background:url(../Fotos/teams/clippers.png) no-repeat left; }
+ li.thunders a { background:url(../Fotos/teams/thunder.png) no-repeat left; }
+ li.Nuggets a { background:url(../Fotos/teams/nuggets.png) no-repeat left; }
+ li.warriors a { background:url(../Fotos/teams/golden.png) no-repeat left; }
+ li.wizards a { background:url(../Fotos/teams/wizard.png) no-repeat left; }
+ li.orlando a { background:url(../Fotos/teams/magic.png) no-repeat left; }
+ 
+ #pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+#header {
+	height: 180px;
+}
+#content {
+	width: 600px;
+	float: left;
+}
+#content_2 {
+	width: 300px;
+	float: left;
+	
+}
+#sidebar {
+	width: 300px;
+	float: right;
+}
+#footer {
+	clear: both;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* para 980px o menos */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 65%;
+	}
+	#content_2 {
+		width: 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+
+}
+
+/* para 700px o menos */
+@media screen and (max-width: 700px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	#content_2 {
+		width: auto;
+		float: none;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* para 480px o menos */
+@media screen and (max-width: 480px) {
+
+	#header {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+/* borde & guideline (puedes ignorarlo) */
+
+
+#header, #content, #sidebar {
+	margin-bottom: 5px;
+}
+  #content, #sidebar, #footer, #content_2 {
+	 -moz-border-radius:6px;
+	-webkit-border-radius:6px;
+}
+
+#sidebar img {
+	margin: 1px;
+	border: 5px solid #eee;
+	-webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+}
+
+#sidebar img:hover {
+	-webkit-transform: rotate(-7deg);
+	-moz-transform: rotate(-7deg);
+	-o-transform: rotate(-7deg);
+}
+
+#content img {
+	margin: 1px;
+	border: 5px solid #eee;
+	-webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+}
+
+#content img:hover {
+	-webkit-transform: rotate(-7deg);
+	-moz-transform: rotate(-7deg);
+	-o-transform: rotate(-7deg);
+}
+
+
+
+
+
